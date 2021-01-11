@@ -23,11 +23,11 @@
             }
 
             #task-container{
-                max-width: 600px;
-                margin: 0 auto;
+                max-width: 500px;
+                margin: 25%; auto;
                 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
                 background-color: #fff;
-                margin: 100px 0;
+                
                 justify-content: space-around;
                 align-items: flex-start;
             }
@@ -61,13 +61,23 @@
                 color: #686868;
             }
 
+            .header{
+                font-weight: bold;
+                text-align: center;
+                font-size: 4rem;
+                width: 100%;
+                color: #385470;
+            }
+
 
             
         </style>
     </head>
     <body>
         <div class="container">
+            
             <div id="task-container">
+                <h1 class="header">Docket</h1>
                 <div id="form-wrapper">
                     <form id="form">
                         <div class="flex-wrapper">
@@ -142,7 +152,7 @@
                                     <button class="btn btn-sm btn-outline-info edit">Edit</button>
                                 </div>
                                 <div style="flex: 1">
-                                    <button class="btn btn-sm  btn-outline-dark delete">-</button>
+                                    <button class="btn btn-sm  btn-outline-danger delete">Delete</button>
                                 </div>
                             </div>`
                             wrapper.innerHTML += item
